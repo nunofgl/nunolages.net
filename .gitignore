@@ -1,0 +1,10 @@
+.project
+.pydevproject
+/.dbeaver-data-sources.xml
+/datadump.json
+/app.yaml
+/db.sqlite3
+/excluded
+/syncserver.sh
+/notes.txt
+/.env

@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Fervency
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131006
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link href="{% static 'intro/css/fervency/googleapis_fonts.css' %}" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'intro/css/fervency/default.css' %}" />
+        <link href="{% static 'intro/css/fervency/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+        <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Enso.svg/2000px-Enso.svg.png"/>
+
+        <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    </head>
+    <body style="background: #242424;">
+        <div id="header-wrapper">
+            <!--<div id="header" style="background-color: #43a2ca;">-->
+            <div id="header" class="container">
+                <div id="logo">
+                    <img src="{% static 'intro/images/nuno.jpg' %}" />
+                    <h1 style="color: #FFFFFF; margin-bottom: 0.4em"> Nuno Lages</h1>
+                    </a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a style="text-transform: lowercase;" href="/intro/biosketch/#menu" accesskey="1" title=""><b>Biosketch</b></a></li>
+                        <li><a style="text-transform: lowercase;" href="/blog/" accesskey="2" title=""><b>Blog</b></a></li>
+                        <li><a style="text-transform: lowercase;" href="/intro/portfolio/#menu" accesskey="3" title=""><b>Portfolio</b></a></li>
+                        <li class="current_page_item">
+                            <a style="text-transform: lowercase;" href="/intro/contact" accesskey="4" title=""><b>Contact</b></a>
+                        </li>
+                        <li><a style="text-transform: lowercase;" href="/intro/links/#menu" accesskey="5" title=""><b>Links</b></a></li>
+                    </ul>
+                    <ul>
+                        <li><a id="portuguese" accesskey="6" title="">Português</a></li>
+                        <li><a id="english" accesskey="7" title="">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% block stuff %}{% endblock stuff %}
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-105101417-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script src="{% static 'intro/js/main.js' %}"></script>
+    </body>
+</html>

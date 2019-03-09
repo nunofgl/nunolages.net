@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Fervency 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131006
+
+-->
+{% block stuff %}
+<div id="wrapper3" style="padding: 4em 0em;">
+    <div class="title">
+        <h2 style="color: #000000; text-align: center; font-family: lucida-sans;">Portfolio</h2>
+    </div>
+    <div id="menu-portfolio" style="margin-bottom: 5em; font-family: lucida-sans;">
+        <ul>
+            <li><a style="text-transform: lowercase; color: #000000;" href="/intro/portfolio/#software" accesskey="1" title=""><b>Software</b></a></li>
+            <li><a style="text-transform: lowercase; color: #000000;" href="/intro/portfolio/#papers" accesskey="2" title=""><b>Research papers</b></a></li>
+            <li><a style="text-transform: lowercase; color: #000000;" href="/intro/portfolio/#books" accesskey="3" title=""><b>Book</b></a></li>
+        </ul>
+    </div>
+</div>
+<div id="software" style="padding: 0em 0em;">
+    <div id="software-content" class="container">
+        <div class="title">
+            <h2>Software</h2>
+            <span class="byline">Software to which I contributed</span>
+        </div>
+        <div class="column1" style="margin-top: 0em">
+            <div class="box"> 
+                <a target="_blank" href="http://enzymology.fc.ul.pt/software/"><img src="{% static 'intro/images/stimatorlogo1.png' %}" alt=""/></a>
+                <h3>S-timator</h3>
+                <p>Python package developed at the University of Lisbon for model discrimination and parameter estimation.</p>
+                <a target="_blank" href="http://enzymology.fc.ul.pt/software/" class="button button-small">Go</a> </div>
+        </div>
+        <div class="column2" style="margin-top: 1.5em">
+            <div class="box"> 
+                <a target="_blank" href="http://web.ist.utl.pt/helena.galhardas/umedicine_site/index.html"><img src="{% static 'intro/images/umedicine.png' %}" alt=""/></a>
+                <h3>Umedicine</h3>
+                <p>A clinical decision support system written in Java/Spring at Técnico Lisboa and INESC-ID.</p>
+                <a target="_blank" href="http://web.ist.utl.pt/helena.galhardas/umedicine_site/index.html" class="button button-small">Go</a> </div>
+            </div>
+        </div>
+        <div class="column3" style="margin-top: 1.5em">
+            <div class="box">
+                <a target="_blank" href="http://www.maxdata.pt/en/home/"><img src="{% static 'intro/images/clinidata.jpg' %}" alt=""/></a>
+                <p></p>
+                <p>Software system for healthcare providers<br />and<br />clinical laboratories.</p>
+                <a target="_blank" href="http://www.maxdata.pt/en/home/" class="button button-small">Go</a> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="papers">
+	<div id="papers-content" class="container">
+		<div class="title">
+			<h2>Research papers</h2>
+			<span class="byline">Articles published in international research journals and conference proceedings</span>
+        </div>
+		<div class="column1" style="margin-top: 0em">
+			<div class="box"> <a target="_blank" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0032749"><img src="{% static 'intro/images/plos_one.png' %}" alt="" class="image image-full" /></a>
+				<h3>PLoS One</h3>
+				<p>Optimization of Time-Course Experiments<br />for<br />Kinetic Model Discrimination</p>
+				<a target="_blank" href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0032749" class="button button-small">Go</a> </div>
+		</div>
+		<div class="column2" style="margin-top: 1.1em">
+			<div class="box"> <a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S1096717609000378?np=y"><img src="{% static 'intro/images/metab_eng.png' %}"  alt="" class="image image-full" /></a>
+				<h3>Metabolic Engineering</h3>
+				<p>Metabolic impact of redox cofactor perturbations in Saccharomyces cerevisiae</p>
+				<a target="_blank" href="http://www.sciencedirect.com/science/article/pii/S1096717609000378?np=y" class="button button-small">Go</a> </div>
+		</div>
+		<div class="column3" style="margin-top: 3.7em">
+			<div class="box"> <a target="_blank" href="http://www.biomedcentral.com/1752-0509/1/S1/S8"><img src="{% static 'intro/images/biosysbio.png' %}" alt="" class="image image-full" /></a>
+				<h3>BMC Systems Biology</h3>
+				<p>Potential role of the glyoxalase pathway as a drug target in Leishmania infantum: an exact steady-state model analysis</p>
+				<a target="_blank" href="http://www.biomedcentral.com/1752-0509/1/S1/S8" class="button button-small">Go</a> </div>
+		</div>
+		<div class="column1" style="margin-top: 11.2em">
+			<div class="box"> <a target="_blank" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6235661"><img src="{% static 'intro/images/ieee.png' %}" alt="" class="image image-full" /></a>
+				<h3>IEEE International Symposium on Biomedical Imaging</h3>
+				<p>A template match-ing approach for segmenting microscopy images<br /><br /></p>
+				<a target="_blank" href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6235661" class="button button-small">Go</a> </div>
+		</div>
+        <div class="column2" style="margin-top: 1.1em">
+            <div class="box"> <a target="_blank" href="http://www.biomedcentral.com/1471-2164/15/577/abstract"><img src="{% static 'intro/images/bmc_genomics.png' %}"  alt="" class="image image-full" /></a>
+                <h3>BMC Genomics<br /><br /></h3>
+                <p>Relationship between gene duplicability and diversifiability in the topology of biochemical networks</p>
+                <a target="_blank" href="http://www.biomedcentral.com/1471-2164/15/577/abstract" class="button button-small">Go</a> </div>
+        </div>
+        <div class="column3" style="margin-top: 8.7em">
+            <div class="box"> <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-67186-4_9"><img src="{% static 'intro/images/umedicinePaper.png' %}"  alt="" class="image image-full" /></a>
+                <h3>VLDB Workshop on Data Management and Analytics for Medicine and Healthcare<br /><br /></h3>
+                <p>Umedicine: A System for Clinical Practice Support and Data Analysis</p>
+                <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-319-67186-4_9" class="button button-small">Go</a> </div>
+        </div>
+    </div>
+</div>
+<div id="books" style="padding: 0em 0em;">
+    <div id="books-content" class="container">
+        <div class="title">
+            <h2>Book chapter</h2>
+            <!--<span class="byline">Articles published in international research journals and conference proceedings</span>-->
+        </div>
+        <div class="column1">
+            <div class="box">
+                <a target="_blank" href="https://www.lidel.pt/pt/catalogo/ciencias-fundamentais/bioquimica/bioquimica/"><img src="{% static 'intro/images/lidel.gif' %}" width="107" height="140" alt="" class="image" /></a>
+                <h3>Biochemistry: Molecular Organization of Life</h3>
+                <p>Amino Acid Metabolism<br />(In Portuguese)</p>
+                <a target="_blank" href="https://www.lidel.pt/pt/catalogo/ciencias-fundamentais/bioquimica/bioquimica/" class="button button-small">Go</a>
+            </div>
+        </div>
+	</div>
+</div>
+{% endblock stuff %}

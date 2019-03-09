@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{%block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'intro/css/default_style.css' %}" />
+</head>
+<body>
+    <img
+      src="{% static 'intro/images/grand_canyon_nuno.png' %}"
+      title="Colorado River"
+    >
+    {%block content %}{% endblock %}</body>
+</html>

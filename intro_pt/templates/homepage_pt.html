@@ -1,0 +1,32 @@
+{% extends "base_pt.html" %}
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Fervency 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20131006
+
+-->
+{% block stuff %}
+<div id="wrapper1">
+	<div id="welcome" class="container">
+		<div class="title">
+			<h2>Bem-vindo</h2>
+	    </div>
+        <ul>
+            <a target="_blank" href="https://twitter.com/nuno_lages" style="text-decoration: none; margin:0 50px 0 0;">
+                <img src="{% static 'intro/images/twitter-4-xxl.png' %}"  height="70" width="70"/>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/nlages" style="text-decoration: none;">
+                <img src="{% static 'intro/images/linkedin-3-xxl.png' %}"  height="70" width="70"/>
+            </a>
+        </ul>
+    </div>
+</div>
+{% endblock stuff %}
+
